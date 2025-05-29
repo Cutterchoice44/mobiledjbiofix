@@ -203,3 +203,36 @@ background: url("/images/bricks.png") center center / cover no-repeat fixed;
     height: 50px;
   }
 }
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    display: block;
+  }
+
+  .bio-section,
+  .column-mid,
+  .column-right {
+    width: 100%;
+    padding: 15px;
+    border-right: none;
+    border-bottom: 2px solid var(--teal);
+  }
+
+  .bio-section h1 {
+    font-size: 3rem;
+  }
+
+  /* ↓ Add this to halve your bio paragraph size ↓ */
+  .bio-section p {
+    font-size: 1.1rem;
+  }
+
+  .socials-section h2,
+  .mixes-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .mix-show iframe {
+    height: 50px;
+  }
+}
